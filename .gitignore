@@ -13,7 +13,7 @@ test/coverage
 
 # dist file
 es
-lib
+# lib
 dist
 vetur
 site
