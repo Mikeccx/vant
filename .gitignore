@@ -12,9 +12,9 @@ package-lock.json
 test/coverage
 
 # dist file
-es
+# es
 # lib
 dist
-vetur
+# vetur
 site
 changelog.generated.md

@@ -28,12 +28,6 @@
   "npm": {
     "tag": "next"
   },
-  "lint-staged": {
-    "*.md": "prettier --write",
-    "*.{ts,tsx,js,vue,less}": "prettier --write",
-    "*.{ts,tsx,js,vue}": "eslint --fix",
-    "*.{vue,css,less}": "stylelint --fix"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:youzan/vant.git"
