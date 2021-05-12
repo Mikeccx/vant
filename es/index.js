@@ -83,7 +83,7 @@ import { Tag } from './tag';
 import { Toast } from './toast';
 import { TreeSelect } from './tree-select';
 import { Uploader } from './uploader';
-var version = '1.0.0';
+var version = '3.0.16';
 
 function install(app) {
   var components = [ActionBar, ActionBarButton, ActionBarIcon, ActionSheet, AddressEdit, AddressList, Area, Badge, Button, Calendar, Card, Cascader, Cell, CellGroup, Checkbox, CheckboxGroup, Circle, Col, Collapse, CollapseItem, ContactCard, ContactEdit, ContactList, CountDown, Coupon, CouponCell, CouponList, DatetimePicker, Dialog, Divider, DropdownItem, DropdownMenu, Empty, Field, Form, Grid, GridItem, Icon, Image, ImagePreview, IndexAnchor, IndexBar, List, Loading, Locale, NavBar, NoticeBar, Notify, NumberKeyboard, Overlay, Pagination, PasswordInput, Picker, Popover, Popup, Progress, PullRefresh, Radio, RadioGroup, Rate, Row, Search, ShareSheet, Sidebar, SidebarItem, Skeleton, Slider, Step, Stepper, Steps, Sticky, SubmitBar, Swipe, SwipeCell, SwipeItem, Switch, Tab, Tabbar, TabbarItem, Tabs, Tag, Toast, TreeSelect, Uploader];

@@ -89,4 +89,4 @@ declare namespace _default {
 }
 export default _default;
 export function install(app: any): void;
-export const version: "1.0.0";
+export const version: "3.0.16";

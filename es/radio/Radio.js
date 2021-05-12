@@ -23,7 +23,12 @@ export default defineComponent({
 
     var checked = () => {
       var value = parent ? parent.props.modelValue : props.modelValue;
-      return value === props.name || (value.id && value.id.toString()) === (props.name && props.name.id);
+
+      if (value && value.id) {
+        return value.id && value.id.toString() === props.name && props.name.id;
+      }
+
+      return value === props.name;
     };
 
     var toggle = () => {

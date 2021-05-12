@@ -19,12 +19,16 @@ export default defineComponent({
 
   emits: ['update:modelValue'],
 
-  setup(props, { emit, slots }) {
+  setup(props: any, { emit, slots }) {
     const { parent } = useParent<RadioGroupProvide>(RADIO_KEY);
 
     const checked = () => {
-      const value = parent ? parent.props.modelValue : props.modelValue;
+      const value:any = parent ? parent.props.modelValue : props.modelValue;
+      if (value && value.id) {
+        return value.id && value.id.toString() === props.name && props.name.id;
+      }
       return value === props.name;
+
     };
 
     const toggle = () => {

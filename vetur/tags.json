@@ -1,35 +1,4 @@
 {
-  "van-action-bar": {
-    "attributes": [
-      "safe-area-inset-bottom"
-    ]
-  },
-  "van-action-bar-icon": {
-    "attributes": [
-      "text",
-      "icon",
-      "color",
-      "icon-class",
-      "dot",
-      "badge",
-      "url",
-      "to",
-      "replace"
-    ]
-  },
-  "van-action-bar-button": {
-    "attributes": [
-      "text",
-      "type",
-      "color",
-      "icon",
-      "disabled",
-      "loading",
-      "url",
-      "to",
-      "replace"
-    ]
-  },
   "van-action-sheet": {
     "attributes": [
       "v-model:show",
@@ -79,6 +48,17 @@
       "validator"
     ]
   },
+  "van-address-list": {
+    "attributes": [
+      "v-model",
+      "list",
+      "disabled-list",
+      "disabled-text",
+      "switchable",
+      "add-button-text",
+      "default-tag-text"
+    ]
+  },
   "van-area": {
     "attributes": [
       "value",
@@ -94,27 +74,6 @@
       "visible-item-count",
       "swipe-duration",
       "is-oversea-code"
-    ]
-  },
-  "van-address-list": {
-    "attributes": [
-      "v-model",
-      "list",
-      "disabled-list",
-      "disabled-text",
-      "switchable",
-      "add-button-text",
-      "default-tag-text"
-    ]
-  },
-  "van-badge": {
-    "attributes": [
-      "content",
-      "color",
-      "dot",
-      "max",
-      "offset",
-      "show-zero"
     ]
   },
   "van-button": {
@@ -138,6 +97,47 @@
       "loading-text",
       "loading-type",
       "loading-size",
+      "url",
+      "to",
+      "replace"
+    ]
+  },
+  "van-badge": {
+    "attributes": [
+      "content",
+      "color",
+      "dot",
+      "max",
+      "offset",
+      "show-zero"
+    ]
+  },
+  "van-action-bar": {
+    "attributes": [
+      "safe-area-inset-bottom"
+    ]
+  },
+  "van-action-bar-icon": {
+    "attributes": [
+      "text",
+      "icon",
+      "color",
+      "icon-class",
+      "dot",
+      "badge",
+      "url",
+      "to",
+      "replace"
+    ]
+  },
+  "van-action-bar-button": {
+    "attributes": [
+      "text",
+      "type",
+      "color",
+      "icon",
+      "disabled",
+      "loading",
       "url",
       "to",
       "replace"
@@ -984,6 +984,24 @@
       "container"
     ]
   },
+  "van-submit-bar": {
+    "attributes": [
+      "price",
+      "decimal-length",
+      "label",
+      "suffix-label",
+      "text-align",
+      "button-text",
+      "button-type",
+      "button-color",
+      "tip",
+      "tip-icon",
+      "currency",
+      "disabled",
+      "loading",
+      "safe-area-inset-bottom"
+    ]
+  },
   "van-swipe": {
     "attributes": [
       "autoplay",
@@ -1002,24 +1020,6 @@
   },
   "van-swipe-item": {
     "attributes": []
-  },
-  "van-submit-bar": {
-    "attributes": [
-      "price",
-      "decimal-length",
-      "label",
-      "suffix-label",
-      "text-align",
-      "button-text",
-      "button-type",
-      "button-color",
-      "tip",
-      "tip-icon",
-      "currency",
-      "disabled",
-      "loading",
-      "safe-area-inset-bottom"
-    ]
   },
   "van-swipe-cell": {
     "attributes": [

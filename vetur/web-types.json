@@ -1,242 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json",
   "framework": "vue",
-  "name": "vant-vanke",
-  "version": "1.0.0",
+  "name": "vant",
+  "version": "3.0.16",
   "contributions": {
     "html": {
       "tags": [
-        {
-          "name": "van-action-bar",
-          "slots": [],
-          "events": [],
-          "attributes": [
-            {
-              "name": "safe-area-inset-bottom",
-              "default": "`true`",
-              "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-action-bar-icon",
-          "slots": [
-            {
-              "name": "default",
-              "description": "文本内容"
-            },
-            {
-              "name": "icon",
-              "description": "自定义图标"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "text",
-              "default": "-",
-              "description": "按钮文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon",
-              "default": "-",
-              "description": "图标",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "color",
-              "default": "`#323233`",
-              "description": "图标颜色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon-class",
-              "default": "object_",
-              "description": "图标额外类名",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "string | Array \\",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "dot",
-              "default": "`false`",
-              "description": "是否显示图标右上角小红点",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "badge",
-              "default": "-",
-              "description": "图标右上角徽标的内容",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "url",
-              "default": "-",
-              "description": "点击后跳转的链接地址",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "to",
-              "default": "-",
-              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
-              "options": [],
-              "value": {
-                "type": "string | object",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "replace",
-              "default": "`false`",
-              "description": "是否在跳转时替换当前页面历史",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-action-bar-button",
-          "slots": [
-            {
-              "name": "default",
-              "description": "按钮显示内容"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "text",
-              "default": "-",
-              "description": "按钮文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "type",
-              "default": "`default`",
-              "description": "按钮类型，可选值为 `primary` `info` `warning` `danger`",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "color",
-              "default": "-",
-              "description": "按钮颜色，支持传入 `linear-gradient` 渐变色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon",
-              "default": "-",
-              "description": "左侧[图标名称](#/zh-CN/icon)或图片链接",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "disabled",
-              "default": "`false`",
-              "description": "是否禁用按钮",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "loading",
-              "default": "`false`",
-              "description": "是否显示为加载状态",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "url",
-              "default": "-",
-              "description": "点击后跳转的链接地址",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "to",
-              "default": "-",
-              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
-              "options": [],
-              "value": {
-                "type": "string | object",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "replace",
-              "default": "`false`",
-              "description": "是否在跳转时替换当前页面历史",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
         {
           "name": "van-action-sheet",
           "slots": [
@@ -748,6 +517,125 @@
           ]
         },
         {
+          "name": "van-address-list",
+          "slots": [
+            {
+              "name": "default",
+              "description": "在列表下方插入内容"
+            },
+            {
+              "name": "top",
+              "description": "在顶部插入内容"
+            },
+            {
+              "name": "item-bottom",
+              "description": "在列表项底部插入内容"
+            },
+            {
+              "name": "tag",
+              "description": "自定义列表项标签内容"
+            }
+          ],
+          "events": [
+            {
+              "name": "add",
+              "description": "点击新增按钮时触发"
+            },
+            {
+              "name": "edit",
+              "description": "点击编辑按钮时触发"
+            },
+            {
+              "name": "select",
+              "description": "切换选中的地址时触发"
+            },
+            {
+              "name": "edit-disabled",
+              "description": "编辑不可配送的地址时触发"
+            },
+            {
+              "name": "select-disabled",
+              "description": "选中不可配送的地址时触发"
+            },
+            {
+              "name": "click-item",
+              "description": "点击任意地址时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "v-model",
+              "default": "-",
+              "description": "当前选中地址的 id",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "list",
+              "default": "`[]`",
+              "description": "地址列表",
+              "options": [],
+              "value": {
+                "type": "Address[]",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled-list",
+              "default": "`[]`",
+              "description": "不可配送地址列表",
+              "options": [],
+              "value": {
+                "type": "Address[]",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled-text",
+              "default": "-",
+              "description": "不可配送提示文案",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "switchable",
+              "default": "`true`",
+              "description": "是否允许切换地址",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "add-button-text",
+              "default": "`新增地址`",
+              "description": "底部按钮文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "default-tag-text",
+              "default": "-",
+              "description": "默认地址标签文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
           "name": "van-area",
           "slots": [
             {
@@ -905,203 +793,6 @@
               "options": [],
               "value": {
                 "type": "() => boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-address-list",
-          "slots": [
-            {
-              "name": "default",
-              "description": "在列表下方插入内容"
-            },
-            {
-              "name": "top",
-              "description": "在顶部插入内容"
-            },
-            {
-              "name": "item-bottom",
-              "description": "在列表项底部插入内容"
-            },
-            {
-              "name": "tag",
-              "description": "自定义列表项标签内容"
-            }
-          ],
-          "events": [
-            {
-              "name": "add",
-              "description": "点击新增按钮时触发"
-            },
-            {
-              "name": "edit",
-              "description": "点击编辑按钮时触发"
-            },
-            {
-              "name": "select",
-              "description": "切换选中的地址时触发"
-            },
-            {
-              "name": "edit-disabled",
-              "description": "编辑不可配送的地址时触发"
-            },
-            {
-              "name": "select-disabled",
-              "description": "选中不可配送的地址时触发"
-            },
-            {
-              "name": "click-item",
-              "description": "点击任意地址时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "v-model",
-              "default": "-",
-              "description": "当前选中地址的 id",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "list",
-              "default": "`[]`",
-              "description": "地址列表",
-              "options": [],
-              "value": {
-                "type": "Address[]",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "disabled-list",
-              "default": "`[]`",
-              "description": "不可配送地址列表",
-              "options": [],
-              "value": {
-                "type": "Address[]",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "disabled-text",
-              "default": "-",
-              "description": "不可配送提示文案",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "switchable",
-              "default": "`true`",
-              "description": "是否允许切换地址",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "add-button-text",
-              "default": "`新增地址`",
-              "description": "底部按钮文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "default-tag-text",
-              "default": "-",
-              "description": "默认地址标签文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-badge",
-          "slots": [
-            {
-              "name": "default",
-              "description": "徽标包裹的子元素"
-            },
-            {
-              "name": "content",
-              "description": "自定义徽标内容"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "content",
-              "default": "-",
-              "description": "徽标内容",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "color",
-              "default": "`#ee0a24`",
-              "description": "徽标背景颜色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "dot",
-              "default": "`false`",
-              "description": "是否展示为小红点",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "max",
-              "default": "-",
-              "description": "最大值，超过最大值会显示 `{max}+`，仅当 content 为数字时有效",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "offset",
-              "default": "string]_",
-              "description": "设置徽标的偏移量，数组的两项分别对应水平和垂直方向的偏移量，默认单位为 `px`",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "[number | string, number \\",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "show-zero",
-              "default": "`true`",
-              "description": "当 content 为数字 0 时，是否展示徽标",
-              "options": [],
-              "value": {
-                "type": "boolean",
                 "kind": "expression"
               }
             }
@@ -1317,6 +1008,315 @@
               "options": [],
               "value": {
                 "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "url",
+              "default": "-",
+              "description": "点击后跳转的链接地址",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "to",
+              "default": "-",
+              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
+              "options": [],
+              "value": {
+                "type": "string | object",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "replace",
+              "default": "`false`",
+              "description": "是否在跳转时替换当前页面历史",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-badge",
+          "slots": [
+            {
+              "name": "default",
+              "description": "徽标包裹的子元素"
+            },
+            {
+              "name": "content",
+              "description": "自定义徽标内容"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "content",
+              "default": "-",
+              "description": "徽标内容",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "default": "`#ee0a24`",
+              "description": "徽标背景颜色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "dot",
+              "default": "`false`",
+              "description": "是否展示为小红点",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "max",
+              "default": "-",
+              "description": "最大值，超过最大值会显示 `{max}+`，仅当 content 为数字时有效",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "offset",
+              "default": "string]_",
+              "description": "设置徽标的偏移量，数组的两项分别对应水平和垂直方向的偏移量，默认单位为 `px`",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "[number | string, number \\",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "show-zero",
+              "default": "`true`",
+              "description": "当 content 为数字 0 时，是否展示徽标",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-action-bar",
+          "slots": [],
+          "events": [],
+          "attributes": [
+            {
+              "name": "safe-area-inset-bottom",
+              "default": "`true`",
+              "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-action-bar-icon",
+          "slots": [
+            {
+              "name": "default",
+              "description": "文本内容"
+            },
+            {
+              "name": "icon",
+              "description": "自定义图标"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "text",
+              "default": "-",
+              "description": "按钮文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon",
+              "default": "-",
+              "description": "图标",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "default": "`#323233`",
+              "description": "图标颜色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon-class",
+              "default": "object_",
+              "description": "图标额外类名",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "string | Array \\",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "dot",
+              "default": "`false`",
+              "description": "是否显示图标右上角小红点",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "badge",
+              "default": "-",
+              "description": "图标右上角徽标的内容",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "url",
+              "default": "-",
+              "description": "点击后跳转的链接地址",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "to",
+              "default": "-",
+              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
+              "options": [],
+              "value": {
+                "type": "string | object",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "replace",
+              "default": "`false`",
+              "description": "是否在跳转时替换当前页面历史",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-action-bar-button",
+          "slots": [
+            {
+              "name": "default",
+              "description": "按钮显示内容"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "text",
+              "default": "-",
+              "description": "按钮文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "type",
+              "default": "`default`",
+              "description": "按钮类型，可选值为 `primary` `info` `warning` `danger`",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "default": "-",
+              "description": "按钮颜色，支持传入 `linear-gradient` 渐变色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon",
+              "default": "-",
+              "description": "左侧[图标名称](#/zh-CN/icon)或图片链接",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled",
+              "default": "`false`",
+              "description": "是否禁用按钮",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading",
+              "default": "`false`",
+              "description": "是否显示为加载状态",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "boolean",
                 "kind": "expression"
               }
             },
@@ -8826,158 +8826,6 @@
           ]
         },
         {
-          "name": "van-swipe",
-          "slots": [
-            {
-              "name": "default",
-              "description": "轮播内容"
-            },
-            {
-              "name": "indicator",
-              "description": "自定义指示器"
-            }
-          ],
-          "events": [
-            {
-              "name": "change",
-              "description": "每一页轮播结束后触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "autoplay",
-              "default": "-",
-              "description": "自动轮播间隔，单位为 ms",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "duration",
-              "default": "`500`",
-              "description": "动画时长，单位为 ms",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "initial-swipe",
-              "default": "`0`",
-              "description": "初始位置索引值",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "width",
-              "default": "`auto`",
-              "description": "滑块宽度，单位为 `px`",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "height",
-              "default": "`auto`",
-              "description": "滑块高度，单位为 `px`",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "loop",
-              "default": "`true`",
-              "description": "是否开启循环播放",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "show-indicators",
-              "default": "`true`",
-              "description": "是否显示指示器",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "vertical",
-              "default": "`false`",
-              "description": "是否为纵向滚动",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "touchable",
-              "default": "`true`",
-              "description": "是否可以通过手势滑动",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "stop-propagation",
-              "default": "`true`",
-              "description": "是否阻止滑动事件冒泡",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "lazy-render",
-              "default": "`false`",
-              "description": "是否延迟渲染未展示的轮播",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "indicator-color",
-              "default": "`#1989fa`",
-              "description": "指示器颜色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-swipe-item",
-          "slots": [],
-          "events": [
-            {
-              "name": "click",
-              "description": "点击时触发"
-            }
-          ],
-          "attributes": []
-        },
-        {
           "name": "van-submit-bar",
           "slots": [
             {
@@ -9145,6 +8993,158 @@
               }
             }
           ]
+        },
+        {
+          "name": "van-swipe",
+          "slots": [
+            {
+              "name": "default",
+              "description": "轮播内容"
+            },
+            {
+              "name": "indicator",
+              "description": "自定义指示器"
+            }
+          ],
+          "events": [
+            {
+              "name": "change",
+              "description": "每一页轮播结束后触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "autoplay",
+              "default": "-",
+              "description": "自动轮播间隔，单位为 ms",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "duration",
+              "default": "`500`",
+              "description": "动画时长，单位为 ms",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "initial-swipe",
+              "default": "`0`",
+              "description": "初始位置索引值",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "width",
+              "default": "`auto`",
+              "description": "滑块宽度，单位为 `px`",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "height",
+              "default": "`auto`",
+              "description": "滑块高度，单位为 `px`",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loop",
+              "default": "`true`",
+              "description": "是否开启循环播放",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "show-indicators",
+              "default": "`true`",
+              "description": "是否显示指示器",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "vertical",
+              "default": "`false`",
+              "description": "是否为纵向滚动",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "touchable",
+              "default": "`true`",
+              "description": "是否可以通过手势滑动",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "stop-propagation",
+              "default": "`true`",
+              "description": "是否阻止滑动事件冒泡",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "lazy-render",
+              "default": "`false`",
+              "description": "是否延迟渲染未展示的轮播",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "indicator-color",
+              "default": "`#1989fa`",
+              "description": "指示器颜色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-swipe-item",
+          "slots": [],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击时触发"
+            }
+          ],
+          "attributes": []
         },
         {
           "name": "van-swipe-cell",
