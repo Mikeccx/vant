@@ -25,7 +25,7 @@ export default defineComponent({
     const checked = () => {
       const value:any = parent ? parent.props.modelValue : props.modelValue;
       if (value && value.id) {
-        return value.id && value.id.toString() === props.name && props.name.id;
+        return (value.id && value.id.toString()) === (props.name && props.name.id);
       }
       return value === props.name;
 
