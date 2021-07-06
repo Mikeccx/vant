@@ -7,6 +7,237 @@
     "html": {
       "tags": [
         {
+          "name": "van-action-bar",
+          "slots": [],
+          "events": [],
+          "attributes": [
+            {
+              "name": "safe-area-inset-bottom",
+              "default": "`true`",
+              "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-action-bar-icon",
+          "slots": [
+            {
+              "name": "default",
+              "description": "文本内容"
+            },
+            {
+              "name": "icon",
+              "description": "自定义图标"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "text",
+              "default": "-",
+              "description": "按钮文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon",
+              "default": "-",
+              "description": "图标",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "default": "`#323233`",
+              "description": "图标颜色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon-class",
+              "default": "object_",
+              "description": "图标额外类名",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "string | Array \\",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "dot",
+              "default": "`false`",
+              "description": "是否显示图标右上角小红点",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "badge",
+              "default": "-",
+              "description": "图标右上角徽标的内容",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "url",
+              "default": "-",
+              "description": "点击后跳转的链接地址",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "to",
+              "default": "-",
+              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
+              "options": [],
+              "value": {
+                "type": "string | object",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "replace",
+              "default": "`false`",
+              "description": "是否在跳转时替换当前页面历史",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-action-bar-button",
+          "slots": [
+            {
+              "name": "default",
+              "description": "按钮显示内容"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "text",
+              "default": "-",
+              "description": "按钮文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "type",
+              "default": "`default`",
+              "description": "按钮类型，可选值为 `primary` `info` `warning` `danger`",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "default": "-",
+              "description": "按钮颜色，支持传入 `linear-gradient` 渐变色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon",
+              "default": "-",
+              "description": "左侧[图标名称](#/zh-CN/icon)或图片链接",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled",
+              "default": "`false`",
+              "description": "是否禁用按钮",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading",
+              "default": "`false`",
+              "description": "是否显示为加载状态",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "url",
+              "default": "-",
+              "description": "点击后跳转的链接地址",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "to",
+              "default": "-",
+              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
+              "options": [],
+              "value": {
+                "type": "string | object",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "replace",
+              "default": "`false`",
+              "description": "是否在跳转时替换当前页面历史",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
           "name": "van-action-sheet",
           "slots": [
             {
@@ -517,125 +748,6 @@
           ]
         },
         {
-          "name": "van-address-list",
-          "slots": [
-            {
-              "name": "default",
-              "description": "在列表下方插入内容"
-            },
-            {
-              "name": "top",
-              "description": "在顶部插入内容"
-            },
-            {
-              "name": "item-bottom",
-              "description": "在列表项底部插入内容"
-            },
-            {
-              "name": "tag",
-              "description": "自定义列表项标签内容"
-            }
-          ],
-          "events": [
-            {
-              "name": "add",
-              "description": "点击新增按钮时触发"
-            },
-            {
-              "name": "edit",
-              "description": "点击编辑按钮时触发"
-            },
-            {
-              "name": "select",
-              "description": "切换选中的地址时触发"
-            },
-            {
-              "name": "edit-disabled",
-              "description": "编辑不可配送的地址时触发"
-            },
-            {
-              "name": "select-disabled",
-              "description": "选中不可配送的地址时触发"
-            },
-            {
-              "name": "click-item",
-              "description": "点击任意地址时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "v-model",
-              "default": "-",
-              "description": "当前选中地址的 id",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "list",
-              "default": "`[]`",
-              "description": "地址列表",
-              "options": [],
-              "value": {
-                "type": "Address[]",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "disabled-list",
-              "default": "`[]`",
-              "description": "不可配送地址列表",
-              "options": [],
-              "value": {
-                "type": "Address[]",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "disabled-text",
-              "default": "-",
-              "description": "不可配送提示文案",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "switchable",
-              "default": "`true`",
-              "description": "是否允许切换地址",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "add-button-text",
-              "default": "`新增地址`",
-              "description": "底部按钮文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "default-tag-text",
-              "default": "-",
-              "description": "默认地址标签文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
           "name": "van-area",
           "slots": [
             {
@@ -793,6 +905,203 @@
               "options": [],
               "value": {
                 "type": "() => boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-address-list",
+          "slots": [
+            {
+              "name": "default",
+              "description": "在列表下方插入内容"
+            },
+            {
+              "name": "top",
+              "description": "在顶部插入内容"
+            },
+            {
+              "name": "item-bottom",
+              "description": "在列表项底部插入内容"
+            },
+            {
+              "name": "tag",
+              "description": "自定义列表项标签内容"
+            }
+          ],
+          "events": [
+            {
+              "name": "add",
+              "description": "点击新增按钮时触发"
+            },
+            {
+              "name": "edit",
+              "description": "点击编辑按钮时触发"
+            },
+            {
+              "name": "select",
+              "description": "切换选中的地址时触发"
+            },
+            {
+              "name": "edit-disabled",
+              "description": "编辑不可配送的地址时触发"
+            },
+            {
+              "name": "select-disabled",
+              "description": "选中不可配送的地址时触发"
+            },
+            {
+              "name": "click-item",
+              "description": "点击任意地址时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "v-model",
+              "default": "-",
+              "description": "当前选中地址的 id",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "list",
+              "default": "`[]`",
+              "description": "地址列表",
+              "options": [],
+              "value": {
+                "type": "Address[]",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled-list",
+              "default": "`[]`",
+              "description": "不可配送地址列表",
+              "options": [],
+              "value": {
+                "type": "Address[]",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled-text",
+              "default": "-",
+              "description": "不可配送提示文案",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "switchable",
+              "default": "`true`",
+              "description": "是否允许切换地址",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "add-button-text",
+              "default": "`新增地址`",
+              "description": "底部按钮文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "default-tag-text",
+              "default": "-",
+              "description": "默认地址标签文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-badge",
+          "slots": [
+            {
+              "name": "default",
+              "description": "徽标包裹的子元素"
+            },
+            {
+              "name": "content",
+              "description": "自定义徽标内容"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "content",
+              "default": "-",
+              "description": "徽标内容",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "default": "`#ee0a24`",
+              "description": "徽标背景颜色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "dot",
+              "default": "`false`",
+              "description": "是否展示为小红点",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "max",
+              "default": "-",
+              "description": "最大值，超过最大值会显示 `{max}+`，仅当 content 为数字时有效",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "offset",
+              "default": "string]_",
+              "description": "设置徽标的偏移量，数组的两项分别对应水平和垂直方向的偏移量，默认单位为 `px`",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "[number | string, number \\",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "show-zero",
+              "default": "`true`",
+              "description": "当 content 为数字 0 时，是否展示徽标",
+              "options": [],
+              "value": {
+                "type": "boolean",
                 "kind": "expression"
               }
             }
@@ -1008,315 +1317,6 @@
               "options": [],
               "value": {
                 "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "url",
-              "default": "-",
-              "description": "点击后跳转的链接地址",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "to",
-              "default": "-",
-              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
-              "options": [],
-              "value": {
-                "type": "string | object",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "replace",
-              "default": "`false`",
-              "description": "是否在跳转时替换当前页面历史",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-badge",
-          "slots": [
-            {
-              "name": "default",
-              "description": "徽标包裹的子元素"
-            },
-            {
-              "name": "content",
-              "description": "自定义徽标内容"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "content",
-              "default": "-",
-              "description": "徽标内容",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "color",
-              "default": "`#ee0a24`",
-              "description": "徽标背景颜色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "dot",
-              "default": "`false`",
-              "description": "是否展示为小红点",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "max",
-              "default": "-",
-              "description": "最大值，超过最大值会显示 `{max}+`，仅当 content 为数字时有效",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "offset",
-              "default": "string]_",
-              "description": "设置徽标的偏移量，数组的两项分别对应水平和垂直方向的偏移量，默认单位为 `px`",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "[number | string, number \\",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "show-zero",
-              "default": "`true`",
-              "description": "当 content 为数字 0 时，是否展示徽标",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-action-bar",
-          "slots": [],
-          "events": [],
-          "attributes": [
-            {
-              "name": "safe-area-inset-bottom",
-              "default": "`true`",
-              "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-action-bar-icon",
-          "slots": [
-            {
-              "name": "default",
-              "description": "文本内容"
-            },
-            {
-              "name": "icon",
-              "description": "自定义图标"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "text",
-              "default": "-",
-              "description": "按钮文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon",
-              "default": "-",
-              "description": "图标",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "color",
-              "default": "`#323233`",
-              "description": "图标颜色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon-class",
-              "default": "object_",
-              "description": "图标额外类名",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "string | Array \\",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "dot",
-              "default": "`false`",
-              "description": "是否显示图标右上角小红点",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "badge",
-              "default": "-",
-              "description": "图标右上角徽标的内容",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "url",
-              "default": "-",
-              "description": "点击后跳转的链接地址",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "to",
-              "default": "-",
-              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
-              "options": [],
-              "value": {
-                "type": "string | object",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "replace",
-              "default": "`false`",
-              "description": "是否在跳转时替换当前页面历史",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-action-bar-button",
-          "slots": [
-            {
-              "name": "default",
-              "description": "按钮显示内容"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "text",
-              "default": "-",
-              "description": "按钮文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "type",
-              "default": "`default`",
-              "description": "按钮类型，可选值为 `primary` `info` `warning` `danger`",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "color",
-              "default": "-",
-              "description": "按钮颜色，支持传入 `linear-gradient` 渐变色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon",
-              "default": "-",
-              "description": "左侧[图标名称](#/zh-CN/icon)或图片链接",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "disabled",
-              "default": "`false`",
-              "description": "是否禁用按钮",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "loading",
-              "default": "`false`",
-              "description": "是否显示为加载状态",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "boolean",
                 "kind": "expression"
               }
             },
@@ -1994,277 +1994,6 @@
           ]
         },
         {
-          "name": "van-cell-group",
-          "slots": [
-            {
-              "name": "default",
-              "description": "默认插槽"
-            },
-            {
-              "name": "title",
-              "description": "自定义分组标题"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "title",
-              "default": "`-`",
-              "description": "分组标题",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "border",
-              "default": "`true`",
-              "description": "是否显示外边框",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-cell",
-          "slots": [
-            {
-              "name": "default",
-              "description": "自定义右侧 value 的内容"
-            },
-            {
-              "name": "title",
-              "description": "自定义左侧 title 的内容"
-            },
-            {
-              "name": "label",
-              "description": "自定义标题下方 label 的内容"
-            },
-            {
-              "name": "icon",
-              "description": "自定义左侧图标"
-            },
-            {
-              "name": "right-icon",
-              "description": "自定义右侧按钮，默认为`arrow`"
-            },
-            {
-              "name": "extra",
-              "description": "自定义单元格最右侧的额外内容"
-            }
-          ],
-          "events": [
-            {
-              "name": "click",
-              "description": "点击单元格时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "title",
-              "default": "-",
-              "description": "左侧标题",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "value",
-              "default": "-",
-              "description": "右侧内容",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "label",
-              "default": "-",
-              "description": "标题下方的描述信息",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "size",
-              "default": "-",
-              "description": "单元格大小，可选值为 `large`",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon",
-              "default": "-",
-              "description": "左侧[图标名称](#/zh-CN/icon)或图片链接",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon-prefix",
-              "default": "`van-icon`",
-              "description": "图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props)",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "url",
-              "default": "-",
-              "description": "点击后跳转的链接地址",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "to",
-              "default": "-",
-              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
-              "options": [],
-              "value": {
-                "type": "string | object",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "border",
-              "default": "`true`",
-              "description": "是否显示内边框",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "replace",
-              "default": "`false`",
-              "description": "是否在跳转时替换当前页面历史",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "clickable",
-              "default": "`null`",
-              "description": "是否开启点击反馈",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "is-link",
-              "default": "`false`",
-              "description": "是否展示右侧箭头并开启点击反馈",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "required",
-              "default": "`false`",
-              "description": "是否显示表单必填星号",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "center",
-              "default": "`false`",
-              "description": "是否使内容垂直居中",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "arrow-direction",
-              "default": "`right`",
-              "description": "箭头方向，可选值为 `left` `up` `down`",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "title-style",
-              "default": "object_",
-              "description": "左侧标题额外样式",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "string | Array \\",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "title-class",
-              "default": "object_",
-              "description": "左侧标题额外类名",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "string | Array \\",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "value-class",
-              "default": "object_",
-              "description": "右侧内容额外类名",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "string | Array \\",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "label-class",
-              "default": "object_",
-              "description": "描述信息额外类名",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "string | Array \\",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
           "name": "van-checkbox",
           "slots": [
             {
@@ -2874,6 +2603,277 @@
               "options": [],
               "value": {
                 "type": "string",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-cell-group",
+          "slots": [
+            {
+              "name": "default",
+              "description": "默认插槽"
+            },
+            {
+              "name": "title",
+              "description": "自定义分组标题"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "title",
+              "default": "`-`",
+              "description": "分组标题",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "border",
+              "default": "`true`",
+              "description": "是否显示外边框",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-cell",
+          "slots": [
+            {
+              "name": "default",
+              "description": "自定义右侧 value 的内容"
+            },
+            {
+              "name": "title",
+              "description": "自定义左侧 title 的内容"
+            },
+            {
+              "name": "label",
+              "description": "自定义标题下方 label 的内容"
+            },
+            {
+              "name": "icon",
+              "description": "自定义左侧图标"
+            },
+            {
+              "name": "right-icon",
+              "description": "自定义右侧按钮，默认为`arrow`"
+            },
+            {
+              "name": "extra",
+              "description": "自定义单元格最右侧的额外内容"
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击单元格时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "default": "-",
+              "description": "左侧标题",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "value",
+              "default": "-",
+              "description": "右侧内容",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "label",
+              "default": "-",
+              "description": "标题下方的描述信息",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "size",
+              "default": "-",
+              "description": "单元格大小，可选值为 `large`",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon",
+              "default": "-",
+              "description": "左侧[图标名称](#/zh-CN/icon)或图片链接",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon-prefix",
+              "default": "`van-icon`",
+              "description": "图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props)",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "url",
+              "default": "-",
+              "description": "点击后跳转的链接地址",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "to",
+              "default": "-",
+              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
+              "options": [],
+              "value": {
+                "type": "string | object",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "border",
+              "default": "`true`",
+              "description": "是否显示内边框",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "replace",
+              "default": "`false`",
+              "description": "是否在跳转时替换当前页面历史",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "clickable",
+              "default": "`null`",
+              "description": "是否开启点击反馈",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "is-link",
+              "default": "`false`",
+              "description": "是否展示右侧箭头并开启点击反馈",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "required",
+              "default": "`false`",
+              "description": "是否显示表单必填星号",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "center",
+              "default": "`false`",
+              "description": "是否使内容垂直居中",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "arrow-direction",
+              "default": "`right`",
+              "description": "箭头方向，可选值为 `left` `up` `down`",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "title-style",
+              "default": "object_",
+              "description": "左侧标题额外样式",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "string | Array \\",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "title-class",
+              "default": "object_",
+              "description": "左侧标题额外类名",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "string | Array \\",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "value-class",
+              "default": "object_",
+              "description": "右侧内容额外类名",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "string | Array \\",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "label-class",
+              "default": "object_",
+              "description": "描述信息额外类名",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "string | Array \\",
                 "kind": "expression"
               }
             }
@@ -3655,6 +3655,234 @@
           ]
         },
         {
+          "name": "van-divider",
+          "slots": [
+            {
+              "name": "default",
+              "description": "内容"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "dashed",
+              "default": "`false`",
+              "description": "是否使用虚线",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "hairline",
+              "default": "`true`",
+              "description": "是否使用 0.5px 线",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "content-position",
+              "default": "`center`",
+              "description": "内容位置，可选值为 `left` `right`",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-dropdown-menu",
+          "slots": [],
+          "events": [],
+          "attributes": [
+            {
+              "name": "active-color",
+              "default": "`#ee0a24`",
+              "description": "菜单标题和选项的选中态颜色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "direction",
+              "default": "`down`",
+              "description": "菜单展开方向，可选值为`up`",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "z-index",
+              "default": "`10`",
+              "description": "菜单栏 z-index 层级",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "duration",
+              "default": "`0.2`",
+              "description": "动画时长，单位秒",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "overlay",
+              "default": "`true`",
+              "description": "是否显示遮罩层",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "close-on-click-overlay",
+              "default": "`true`",
+              "description": "是否在点击遮罩层后关闭菜单",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "close-on-click-outside",
+              "default": "`true`",
+              "description": "是否在点击外部元素后关闭菜单",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-dropdown-item",
+          "slots": [
+            {
+              "name": "default",
+              "description": "菜单内容"
+            },
+            {
+              "name": "title",
+              "description": "自定义菜单项标题"
+            }
+          ],
+          "events": [
+            {
+              "name": "change",
+              "description": "点击选项导致 value 变化时触发"
+            },
+            {
+              "name": "open",
+              "description": "打开菜单栏时触发"
+            },
+            {
+              "name": "close",
+              "description": "关闭菜单栏时触发"
+            },
+            {
+              "name": "opened",
+              "description": "打开菜单栏且动画结束后触发"
+            },
+            {
+              "name": "closed",
+              "description": "关闭菜单栏且动画结束后触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "v-model",
+              "default": "-",
+              "description": "当前选中项对应的 value",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "title",
+              "default": "当前选中项文字",
+              "description": "菜单项标题",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "options",
+              "default": "`[]`",
+              "description": "选项数组",
+              "options": [],
+              "value": {
+                "type": "Option[]",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled",
+              "default": "`false`",
+              "description": "是否禁用菜单",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "lazy-render",
+              "default": "`true`",
+              "description": "是否在首次展开时才渲染菜单内容",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "title-class",
+              "default": "object_",
+              "description": "标题额外类名",
+              "options": [
+                "-"
+              ],
+              "value": {
+                "type": "string | Array \\",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "teleport",
+              "default": "-",
+              "description": "指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi)",
+              "options": [],
+              "value": {
+                "type": "string | Element",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
           "name": "van-dialog",
           "slots": [
             {
@@ -3924,284 +4152,6 @@
               "options": [],
               "value": {
                 "type": "string | Element",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-divider",
-          "slots": [
-            {
-              "name": "default",
-              "description": "内容"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "dashed",
-              "default": "`false`",
-              "description": "是否使用虚线",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "hairline",
-              "default": "`true`",
-              "description": "是否使用 0.5px 线",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "content-position",
-              "default": "`center`",
-              "description": "内容位置，可选值为 `left` `right`",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-dropdown-menu",
-          "slots": [],
-          "events": [],
-          "attributes": [
-            {
-              "name": "active-color",
-              "default": "`#ee0a24`",
-              "description": "菜单标题和选项的选中态颜色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "direction",
-              "default": "`down`",
-              "description": "菜单展开方向，可选值为`up`",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "z-index",
-              "default": "`10`",
-              "description": "菜单栏 z-index 层级",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "duration",
-              "default": "`0.2`",
-              "description": "动画时长，单位秒",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "overlay",
-              "default": "`true`",
-              "description": "是否显示遮罩层",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "close-on-click-overlay",
-              "default": "`true`",
-              "description": "是否在点击遮罩层后关闭菜单",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "close-on-click-outside",
-              "default": "`true`",
-              "description": "是否在点击外部元素后关闭菜单",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-dropdown-item",
-          "slots": [
-            {
-              "name": "default",
-              "description": "菜单内容"
-            },
-            {
-              "name": "title",
-              "description": "自定义菜单项标题"
-            }
-          ],
-          "events": [
-            {
-              "name": "change",
-              "description": "点击选项导致 value 变化时触发"
-            },
-            {
-              "name": "open",
-              "description": "打开菜单栏时触发"
-            },
-            {
-              "name": "close",
-              "description": "关闭菜单栏时触发"
-            },
-            {
-              "name": "opened",
-              "description": "打开菜单栏且动画结束后触发"
-            },
-            {
-              "name": "closed",
-              "description": "关闭菜单栏且动画结束后触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "v-model",
-              "default": "-",
-              "description": "当前选中项对应的 value",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "title",
-              "default": "当前选中项文字",
-              "description": "菜单项标题",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "options",
-              "default": "`[]`",
-              "description": "选项数组",
-              "options": [],
-              "value": {
-                "type": "Option[]",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "disabled",
-              "default": "`false`",
-              "description": "是否禁用菜单",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "lazy-render",
-              "default": "`true`",
-              "description": "是否在首次展开时才渲染菜单内容",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "title-class",
-              "default": "object_",
-              "description": "标题额外类名",
-              "options": [
-                "-"
-              ],
-              "value": {
-                "type": "string | Array \\",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "teleport",
-              "default": "-",
-              "description": "指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi)",
-              "options": [],
-              "value": {
-                "type": "string | Element",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-empty",
-          "slots": [
-            {
-              "name": "default",
-              "description": "自定义底部内容"
-            },
-            {
-              "name": "image",
-              "description": "自定义图标"
-            },
-            {
-              "name": "description",
-              "description": "自定义描述文字"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "image",
-              "default": "`default`",
-              "description": "图片类型，可选值为 `error` `network` `search`，支持传入图片 URL",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "image-size",
-              "default": "-",
-              "description": "图片大小，默认单位为 `px`",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "description",
-              "default": "-",
-              "description": "图片下方的描述文字",
-              "options": [],
-              "value": {
-                "type": "string",
                 "kind": "expression"
               }
             }
@@ -4780,6 +4730,56 @@
               "options": [],
               "value": {
                 "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-empty",
+          "slots": [
+            {
+              "name": "default",
+              "description": "自定义底部内容"
+            },
+            {
+              "name": "image",
+              "description": "自定义图标"
+            },
+            {
+              "name": "description",
+              "description": "自定义描述文字"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "image",
+              "default": "`default`",
+              "description": "图片类型，可选值为 `error` `network` `search`，支持传入图片 URL",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "image-size",
+              "default": "-",
+              "description": "图片大小，默认单位为 `px`",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "description",
+              "default": "-",
+              "description": "图片下方的描述文字",
+              "options": [],
+              "value": {
+                "type": "string",
                 "kind": "expression"
               }
             }
@@ -6174,280 +6174,6 @@
           ]
         },
         {
-          "name": "van-overlay",
-          "slots": [
-            {
-              "name": "default",
-              "description": "默认插槽，用于在遮罩层上方嵌入内容"
-            }
-          ],
-          "events": [
-            {
-              "name": "click",
-              "description": "点击时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "show",
-              "default": "`false`",
-              "description": "是否展示遮罩层",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "z-index",
-              "default": "`1`",
-              "description": "z-index 层级",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "duration",
-              "default": "`0.3`",
-              "description": "动画时长，单位秒",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "class-name",
-              "default": "-",
-              "description": "自定义类名",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "custom-style",
-              "default": "-",
-              "description": "自定义样式",
-              "options": [],
-              "value": {
-                "type": "object",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "lock-scroll",
-              "default": "`true`",
-              "description": "是否锁定背景滚动，锁定时蒙层里的内容也将无法滚动",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-pagination",
-          "slots": [
-            {
-              "name": "page",
-              "description": "自定义页码"
-            },
-            {
-              "name": "prev-text",
-              "description": "自定义上一页按钮文字"
-            },
-            {
-              "name": "next-text",
-              "description": "自定义下一页按钮文字"
-            }
-          ],
-          "events": [
-            {
-              "name": "change",
-              "description": "页码改变时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "v-model",
-              "default": "-",
-              "description": "当前页码",
-              "options": [],
-              "value": {
-                "type": "number",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "mode",
-              "default": "`multi`",
-              "description": "显示模式，可选值为 `simple`",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "prev-text",
-              "default": "`上一页`",
-              "description": "上一页按钮文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "next-text",
-              "default": "`下一页`",
-              "description": "下一页按钮文字",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "page-count",
-              "default": "根据页数计算",
-              "description": "总页数",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "total-items",
-              "default": "`0`",
-              "description": "总记录数",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "items-per-page",
-              "default": "`10`",
-              "description": "每页记录数",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "show-page-size",
-              "default": "`5`",
-              "description": "显示的页码个数",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "force-ellipses",
-              "default": "`false`",
-              "description": "是否显示省略号",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-password-input",
-          "slots": [],
-          "events": [
-            {
-              "name": "focus",
-              "description": "输入框聚焦时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "value",
-              "default": "`''`",
-              "description": "密码值",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "info",
-              "default": "-",
-              "description": "输入框下方文字提示",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "error-info",
-              "default": "-",
-              "description": "输入框下方错误提示",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "length",
-              "default": "`6`",
-              "description": "密码最大长度",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "gutter",
-              "default": "`0`",
-              "description": "输入框格子之间的间距，如 `20px` `2em`，默认单位为`px`",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "mask",
-              "default": "`true`",
-              "description": "是否隐藏密码内容",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "focused",
-              "default": "`false`",
-              "description": "是否已聚焦，聚焦时会显示光标",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
           "name": "van-picker",
           "slots": [
             {
@@ -7829,6 +7555,389 @@
           ]
         },
         {
+          "name": "van-overlay",
+          "slots": [
+            {
+              "name": "default",
+              "description": "默认插槽，用于在遮罩层上方嵌入内容"
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "show",
+              "default": "`false`",
+              "description": "是否展示遮罩层",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "z-index",
+              "default": "`1`",
+              "description": "z-index 层级",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "duration",
+              "default": "`0.3`",
+              "description": "动画时长，单位秒",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "class-name",
+              "default": "-",
+              "description": "自定义类名",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "custom-style",
+              "default": "-",
+              "description": "自定义样式",
+              "options": [],
+              "value": {
+                "type": "object",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "lock-scroll",
+              "default": "`true`",
+              "description": "是否锁定背景滚动，锁定时蒙层里的内容也将无法滚动",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-password-input",
+          "slots": [],
+          "events": [
+            {
+              "name": "focus",
+              "description": "输入框聚焦时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "default": "`''`",
+              "description": "密码值",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "info",
+              "default": "-",
+              "description": "输入框下方文字提示",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "error-info",
+              "default": "-",
+              "description": "输入框下方错误提示",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "length",
+              "default": "`6`",
+              "description": "密码最大长度",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "gutter",
+              "default": "`0`",
+              "description": "输入框格子之间的间距，如 `20px` `2em`，默认单位为`px`",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "mask",
+              "default": "`true`",
+              "description": "是否隐藏密码内容",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "focused",
+              "default": "`false`",
+              "description": "是否已聚焦，聚焦时会显示光标",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-pagination",
+          "slots": [
+            {
+              "name": "page",
+              "description": "自定义页码"
+            },
+            {
+              "name": "prev-text",
+              "description": "自定义上一页按钮文字"
+            },
+            {
+              "name": "next-text",
+              "description": "自定义下一页按钮文字"
+            }
+          ],
+          "events": [
+            {
+              "name": "change",
+              "description": "页码改变时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "v-model",
+              "default": "-",
+              "description": "当前页码",
+              "options": [],
+              "value": {
+                "type": "number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "mode",
+              "default": "`multi`",
+              "description": "显示模式，可选值为 `simple`",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "prev-text",
+              "default": "`上一页`",
+              "description": "上一页按钮文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "next-text",
+              "default": "`下一页`",
+              "description": "下一页按钮文字",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "page-count",
+              "default": "根据页数计算",
+              "description": "总页数",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "total-items",
+              "default": "`0`",
+              "description": "总记录数",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "items-per-page",
+              "default": "`10`",
+              "description": "每页记录数",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "show-page-size",
+              "default": "`5`",
+              "description": "显示的页码个数",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "force-ellipses",
+              "default": "`false`",
+              "description": "是否显示省略号",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-sidebar",
+          "slots": [],
+          "events": [
+            {
+              "name": "change",
+              "description": "切换导航项时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "v-model",
+              "default": "`0`",
+              "description": "当前导航项的索引",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-sidebar-item",
+          "slots": [
+            {
+              "name": "title",
+              "description": "自定义标题"
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "default": "`''`",
+              "description": "内容",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "dot",
+              "default": "`false`",
+              "description": "是否显示右上角小红点",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "badge",
+              "default": "-",
+              "description": "图标右上角徽标的内容",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled",
+              "default": "`false`",
+              "description": "是否禁用该项",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "url",
+              "default": "-",
+              "description": "点击后跳转的链接地址",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "to",
+              "default": "-",
+              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
+              "options": [],
+              "value": {
+                "type": "string | object",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "replace",
+              "default": "`false`",
+              "description": "是否在跳转时替换当前页面历史",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
           "name": "van-share-sheet",
           "slots": [
             {
@@ -8024,115 +8133,6 @@
               "options": [],
               "value": {
                 "type": "string | Element",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-sidebar",
-          "slots": [],
-          "events": [
-            {
-              "name": "change",
-              "description": "切换导航项时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "v-model",
-              "default": "`0`",
-              "description": "当前导航项的索引",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-sidebar-item",
-          "slots": [
-            {
-              "name": "title",
-              "description": "自定义标题"
-            }
-          ],
-          "events": [
-            {
-              "name": "click",
-              "description": "点击时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "title",
-              "default": "`''`",
-              "description": "内容",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "dot",
-              "default": "`false`",
-              "description": "是否显示右上角小红点",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "badge",
-              "default": "-",
-              "description": "图标右上角徽标的内容",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "disabled",
-              "default": "`false`",
-              "description": "是否禁用该项",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "url",
-              "default": "-",
-              "description": "点击后跳转的链接地址",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "to",
-              "default": "-",
-              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
-              "options": [],
-              "value": {
-                "type": "string | object",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "replace",
-              "default": "`false`",
-              "description": "是否在跳转时替换当前页面历史",
-              "options": [],
-              "value": {
-                "type": "boolean",
                 "kind": "expression"
               }
             }
@@ -9683,210 +9683,6 @@
           ]
         },
         {
-          "name": "van-tabbar",
-          "slots": [],
-          "events": [
-            {
-              "name": "change",
-              "description": "切换标签时触发"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "v-model",
-              "default": "`0`",
-              "description": "当前选中标签的名称或索引值",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "fixed",
-              "default": "`true`",
-              "description": "是否固定在底部",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "border",
-              "default": "`true`",
-              "description": "是否显示外边框",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "z-index",
-              "default": "`1`",
-              "description": "元素 z-index",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "active-color",
-              "default": "`#1989fa`",
-              "description": "选中标签的颜色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "inactive-color",
-              "default": "`#7d7e80`",
-              "description": "未选中标签的颜色",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "route",
-              "default": "`false`",
-              "description": "是否开启路由模式",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "placeholder",
-              "default": "`false`",
-              "description": "固定在底部时，是否在标签位置生成一个等高的占位元素",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "safe-area-inset-bottom",
-              "default": "`false`",
-              "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)，设置 fixed 时默认开启",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "before-change",
-              "default": "-",
-              "description": "切换标签前的回调函数，返回 `false` 可阻止切换，支持返回 Promise",
-              "options": [],
-              "value": {
-                "type": "(name) => boolean | Promise",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
-          "name": "van-tabbar-item",
-          "slots": [
-            {
-              "name": "icon",
-              "description": "自定义图标"
-            }
-          ],
-          "events": [],
-          "attributes": [
-            {
-              "name": "name",
-              "default": "当前标签的索引值",
-              "description": "标签名称，作为匹配的标识符",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon",
-              "default": "-",
-              "description": "[图标名称](#/zh-CN/icon)或图片链接",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "icon-prefix",
-              "default": "`van-icon`",
-              "description": "图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props)",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "dot",
-              "default": "`false`",
-              "description": "是否显示图标右上角小红点",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "badge",
-              "default": "-",
-              "description": "图标右上角徽标的内容",
-              "options": [],
-              "value": {
-                "type": "number | string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "url",
-              "default": "-",
-              "description": "点击后跳转的链接地址",
-              "options": [],
-              "value": {
-                "type": "string",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "to",
-              "default": "-",
-              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
-              "options": [],
-              "value": {
-                "type": "string | object",
-                "kind": "expression"
-              }
-            },
-            {
-              "name": "replace",
-              "default": "`false`",
-              "description": "是否在跳转时替换当前页面历史",
-              "options": [],
-              "value": {
-                "type": "boolean",
-                "kind": "expression"
-              }
-            }
-          ]
-        },
-        {
           "name": "van-tag",
           "slots": [
             {
@@ -10328,6 +10124,210 @@
               "options": [],
               "value": {
                 "type": "string",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-tabbar",
+          "slots": [],
+          "events": [
+            {
+              "name": "change",
+              "description": "切换标签时触发"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "v-model",
+              "default": "`0`",
+              "description": "当前选中标签的名称或索引值",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "fixed",
+              "default": "`true`",
+              "description": "是否固定在底部",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "border",
+              "default": "`true`",
+              "description": "是否显示外边框",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "z-index",
+              "default": "`1`",
+              "description": "元素 z-index",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "active-color",
+              "default": "`#1989fa`",
+              "description": "选中标签的颜色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "inactive-color",
+              "default": "`#7d7e80`",
+              "description": "未选中标签的颜色",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "route",
+              "default": "`false`",
+              "description": "是否开启路由模式",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "placeholder",
+              "default": "`false`",
+              "description": "固定在底部时，是否在标签位置生成一个等高的占位元素",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "safe-area-inset-bottom",
+              "default": "`false`",
+              "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)，设置 fixed 时默认开启",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "before-change",
+              "default": "-",
+              "description": "切换标签前的回调函数，返回 `false` 可阻止切换，支持返回 Promise",
+              "options": [],
+              "value": {
+                "type": "(name) => boolean | Promise",
+                "kind": "expression"
+              }
+            }
+          ]
+        },
+        {
+          "name": "van-tabbar-item",
+          "slots": [
+            {
+              "name": "icon",
+              "description": "自定义图标"
+            }
+          ],
+          "events": [],
+          "attributes": [
+            {
+              "name": "name",
+              "default": "当前标签的索引值",
+              "description": "标签名称，作为匹配的标识符",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon",
+              "default": "-",
+              "description": "[图标名称](#/zh-CN/icon)或图片链接",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon-prefix",
+              "default": "`van-icon`",
+              "description": "图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props)",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "dot",
+              "default": "`false`",
+              "description": "是否显示图标右上角小红点",
+              "options": [],
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "badge",
+              "default": "-",
+              "description": "图标右上角徽标的内容",
+              "options": [],
+              "value": {
+                "type": "number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "url",
+              "default": "-",
+              "description": "点击后跳转的链接地址",
+              "options": [],
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "to",
+              "default": "-",
+              "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to)",
+              "options": [],
+              "value": {
+                "type": "string | object",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "replace",
+              "default": "`false`",
+              "description": "是否在跳转时替换当前页面历史",
+              "options": [],
+              "value": {
+                "type": "boolean",
                 "kind": "expression"
               }
             }

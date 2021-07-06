@@ -1,4 +1,35 @@
 {
+  "van-action-bar": {
+    "attributes": [
+      "safe-area-inset-bottom"
+    ]
+  },
+  "van-action-bar-icon": {
+    "attributes": [
+      "text",
+      "icon",
+      "color",
+      "icon-class",
+      "dot",
+      "badge",
+      "url",
+      "to",
+      "replace"
+    ]
+  },
+  "van-action-bar-button": {
+    "attributes": [
+      "text",
+      "type",
+      "color",
+      "icon",
+      "disabled",
+      "loading",
+      "url",
+      "to",
+      "replace"
+    ]
+  },
   "van-action-sheet": {
     "attributes": [
       "v-model:show",
@@ -48,17 +79,6 @@
       "validator"
     ]
   },
-  "van-address-list": {
-    "attributes": [
-      "v-model",
-      "list",
-      "disabled-list",
-      "disabled-text",
-      "switchable",
-      "add-button-text",
-      "default-tag-text"
-    ]
-  },
   "van-area": {
     "attributes": [
       "value",
@@ -74,6 +94,27 @@
       "visible-item-count",
       "swipe-duration",
       "is-oversea-code"
+    ]
+  },
+  "van-address-list": {
+    "attributes": [
+      "v-model",
+      "list",
+      "disabled-list",
+      "disabled-text",
+      "switchable",
+      "add-button-text",
+      "default-tag-text"
+    ]
+  },
+  "van-badge": {
+    "attributes": [
+      "content",
+      "color",
+      "dot",
+      "max",
+      "offset",
+      "show-zero"
     ]
   },
   "van-button": {
@@ -97,47 +138,6 @@
       "loading-text",
       "loading-type",
       "loading-size",
-      "url",
-      "to",
-      "replace"
-    ]
-  },
-  "van-badge": {
-    "attributes": [
-      "content",
-      "color",
-      "dot",
-      "max",
-      "offset",
-      "show-zero"
-    ]
-  },
-  "van-action-bar": {
-    "attributes": [
-      "safe-area-inset-bottom"
-    ]
-  },
-  "van-action-bar-icon": {
-    "attributes": [
-      "text",
-      "icon",
-      "color",
-      "icon-class",
-      "dot",
-      "badge",
-      "url",
-      "to",
-      "replace"
-    ]
-  },
-  "van-action-bar-button": {
-    "attributes": [
-      "text",
-      "type",
-      "color",
-      "icon",
-      "disabled",
-      "loading",
       "url",
       "to",
       "replace"
@@ -203,35 +203,6 @@
       "closeable",
       "close-icon",
       "field-names"
-    ]
-  },
-  "van-cell-group": {
-    "attributes": [
-      "title",
-      "border"
-    ]
-  },
-  "van-cell": {
-    "attributes": [
-      "title",
-      "value",
-      "label",
-      "size",
-      "icon",
-      "icon-prefix",
-      "url",
-      "to",
-      "border",
-      "replace",
-      "clickable",
-      "is-link",
-      "required",
-      "center",
-      "arrow-direction",
-      "title-style",
-      "title-class",
-      "value-class",
-      "label-class"
     ]
   },
   "van-checkbox": {
@@ -307,6 +278,35 @@
       "is-link",
       "disabled",
       "readonly",
+      "title-class",
+      "value-class",
+      "label-class"
+    ]
+  },
+  "van-cell-group": {
+    "attributes": [
+      "title",
+      "border"
+    ]
+  },
+  "van-cell": {
+    "attributes": [
+      "title",
+      "value",
+      "label",
+      "size",
+      "icon",
+      "icon-prefix",
+      "url",
+      "to",
+      "border",
+      "replace",
+      "clickable",
+      "is-link",
+      "required",
+      "center",
+      "arrow-direction",
+      "title-style",
       "title-class",
       "value-class",
       "label-class"
@@ -410,33 +410,6 @@
       "max-minute"
     ]
   },
-  "van-dialog": {
-    "attributes": [
-      "v-model:show",
-      "title",
-      "width",
-      "message",
-      "message-align",
-      "theme",
-      "show-confirm-button",
-      "show-cancel-button",
-      "confirm-button-text",
-      "confirm-button-color",
-      "cancel-button-text",
-      "cancel-button-color",
-      "overlay",
-      "overlay-class",
-      "overlay-style",
-      "close-on-popstate",
-      "close-on-click-overlay",
-      "lazy-render",
-      "lock-scroll",
-      "allow-html",
-      "before-close",
-      "transition",
-      "teleport"
-    ]
-  },
   "van-divider": {
     "attributes": [
       "dashed",
@@ -466,11 +439,31 @@
       "teleport"
     ]
   },
-  "van-empty": {
+  "van-dialog": {
     "attributes": [
-      "image",
-      "image-size",
-      "description"
+      "v-model:show",
+      "title",
+      "width",
+      "message",
+      "message-align",
+      "theme",
+      "show-confirm-button",
+      "show-cancel-button",
+      "confirm-button-text",
+      "confirm-button-color",
+      "cancel-button-text",
+      "cancel-button-color",
+      "overlay",
+      "overlay-class",
+      "overlay-style",
+      "close-on-popstate",
+      "close-on-click-overlay",
+      "lazy-render",
+      "lock-scroll",
+      "allow-html",
+      "before-close",
+      "transition",
+      "teleport"
     ]
   },
   "van-field": {
@@ -528,6 +521,13 @@
       "show-error",
       "show-error-message",
       "submit-on-enter"
+    ]
+  },
+  "van-empty": {
+    "attributes": [
+      "image",
+      "image-size",
+      "description"
     ]
   },
   "van-grid": {
@@ -688,40 +688,6 @@
       "random-key-order"
     ]
   },
-  "van-overlay": {
-    "attributes": [
-      "show",
-      "z-index",
-      "duration",
-      "class-name",
-      "custom-style",
-      "lock-scroll"
-    ]
-  },
-  "van-pagination": {
-    "attributes": [
-      "v-model",
-      "mode",
-      "prev-text",
-      "next-text",
-      "page-count",
-      "total-items",
-      "items-per-page",
-      "show-page-size",
-      "force-ellipses"
-    ]
-  },
-  "van-password-input": {
-    "attributes": [
-      "value",
-      "info",
-      "error-info",
-      "length",
-      "gutter",
-      "mask",
-      "focused"
-    ]
-  },
   "van-picker": {
     "attributes": [
       "columns",
@@ -869,6 +835,56 @@
       "right-icon"
     ]
   },
+  "van-overlay": {
+    "attributes": [
+      "show",
+      "z-index",
+      "duration",
+      "class-name",
+      "custom-style",
+      "lock-scroll"
+    ]
+  },
+  "van-password-input": {
+    "attributes": [
+      "value",
+      "info",
+      "error-info",
+      "length",
+      "gutter",
+      "mask",
+      "focused"
+    ]
+  },
+  "van-pagination": {
+    "attributes": [
+      "v-model",
+      "mode",
+      "prev-text",
+      "next-text",
+      "page-count",
+      "total-items",
+      "items-per-page",
+      "show-page-size",
+      "force-ellipses"
+    ]
+  },
+  "van-sidebar": {
+    "attributes": [
+      "v-model"
+    ]
+  },
+  "van-sidebar-item": {
+    "attributes": [
+      "title",
+      "dot",
+      "badge",
+      "disabled",
+      "url",
+      "to",
+      "replace"
+    ]
+  },
   "van-share-sheet": {
     "attributes": [
       "v-model:show",
@@ -886,22 +902,6 @@
       "close-on-click-overlay",
       "safe-area-inset-bottom",
       "teleport"
-    ]
-  },
-  "van-sidebar": {
-    "attributes": [
-      "v-model"
-    ]
-  },
-  "van-sidebar-item": {
-    "attributes": [
-      "title",
-      "dot",
-      "badge",
-      "disabled",
-      "url",
-      "to",
-      "replace"
     ]
   },
   "van-skeleton": {
@@ -1080,32 +1080,6 @@
       "title-class"
     ]
   },
-  "van-tabbar": {
-    "attributes": [
-      "v-model",
-      "fixed",
-      "border",
-      "z-index",
-      "active-color",
-      "inactive-color",
-      "route",
-      "placeholder",
-      "safe-area-inset-bottom",
-      "before-change"
-    ]
-  },
-  "van-tabbar-item": {
-    "attributes": [
-      "name",
-      "icon",
-      "icon-prefix",
-      "dot",
-      "badge",
-      "url",
-      "to",
-      "replace"
-    ]
-  },
   "van-tag": {
     "attributes": [
       "type",
@@ -1153,6 +1127,32 @@
       "upload-text",
       "image-fit",
       "upload-icon"
+    ]
+  },
+  "van-tabbar": {
+    "attributes": [
+      "v-model",
+      "fixed",
+      "border",
+      "z-index",
+      "active-color",
+      "inactive-color",
+      "route",
+      "placeholder",
+      "safe-area-inset-bottom",
+      "before-change"
+    ]
+  },
+  "van-tabbar-item": {
+    "attributes": [
+      "name",
+      "icon",
+      "icon-prefix",
+      "dot",
+      "badge",
+      "url",
+      "to",
+      "replace"
     ]
   }
 }

@@ -1,4 +1,89 @@
 {
+  "van-action-bar/safe-area-inset-bottom": {
+    "type": "boolean",
+    "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei), 默认值: `true`"
+  },
+  "van-action-bar-icon/text": {
+    "type": "string",
+    "description": "按钮文字, 默认值: -"
+  },
+  "van-action-bar-icon/icon": {
+    "type": "string",
+    "description": "图标, 默认值: -"
+  },
+  "van-action-bar-icon/color": {
+    "type": "string",
+    "description": "图标颜色, 默认值: `#323233`"
+  },
+  "van-action-bar-icon/icon-class": {
+    "type": "string | Array \\",
+    "description": "图标额外类名, 默认值: object_",
+    "options": [
+      "-"
+    ]
+  },
+  "van-action-bar-icon/dot": {
+    "type": "boolean",
+    "description": "是否显示图标右上角小红点, 默认值: `false`"
+  },
+  "van-action-bar-icon/badge": {
+    "type": "number | string",
+    "description": "图标右上角徽标的内容, 默认值: -"
+  },
+  "van-action-bar-icon/url": {
+    "type": "string",
+    "description": "点击后跳转的链接地址, 默认值: -"
+  },
+  "van-action-bar-icon/to": {
+    "type": "string | object",
+    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
+  },
+  "van-action-bar-icon/replace": {
+    "type": "boolean",
+    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
+  },
+  "van-action-bar-button/text": {
+    "type": "string",
+    "description": "按钮文字, 默认值: -"
+  },
+  "van-action-bar-button/type": {
+    "type": "string",
+    "description": "按钮类型，可选值为 `primary` `info` `warning` `danger`, 默认值: `default`"
+  },
+  "van-action-bar-button/color": {
+    "type": "string",
+    "description": "按钮颜色，支持传入 `linear-gradient` 渐变色, 默认值: -"
+  },
+  "van-action-bar-button/icon": {
+    "type": "string",
+    "description": "左侧[图标名称](#/zh-CN/icon)或图片链接, 默认值: -"
+  },
+  "van-action-bar-button/disabled": {
+    "type": "boolean",
+    "description": "是否禁用按钮, 默认值: `false`",
+    "options": [
+      "-"
+    ]
+  },
+  "van-action-bar-button/loading": {
+    "type": "boolean",
+    "description": "是否显示为加载状态, 默认值: `false`",
+    "options": [
+      "-"
+    ]
+  },
+  "van-action-bar-button/url": {
+    "type": "string",
+    "description": "点击后跳转的链接地址, 默认值: -"
+  },
+  "van-action-bar-button/to": {
+    "type": "string | object",
+    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
+  },
+  "van-action-bar-button/replace": {
+    "type": "boolean",
+    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
+  },
   "van-action-sheet/v-model:show": {
     "type": "boolean",
     "description": "是否显示动作面板, 默认值: `false`"
@@ -166,34 +251,6 @@
     "type": "(key, val) => string",
     "description": "自定义校验函数, 默认值: -"
   },
-  "van-address-list/v-model": {
-    "type": "string",
-    "description": "当前选中地址的 id, 默认值: -"
-  },
-  "van-address-list/list": {
-    "type": "Address[]",
-    "description": "地址列表, 默认值: `[]`"
-  },
-  "van-address-list/disabled-list": {
-    "type": "Address[]",
-    "description": "不可配送地址列表, 默认值: `[]`"
-  },
-  "van-address-list/disabled-text": {
-    "type": "string",
-    "description": "不可配送提示文案, 默认值: -"
-  },
-  "van-address-list/switchable": {
-    "type": "boolean",
-    "description": "是否允许切换地址, 默认值: `true`"
-  },
-  "van-address-list/add-button-text": {
-    "type": "string",
-    "description": "底部按钮文字, 默认值: `新增地址`"
-  },
-  "van-address-list/default-tag-text": {
-    "type": "string",
-    "description": "默认地址标签文字, 默认值: -"
-  },
   "van-area/value": {
     "type": "string",
     "description": "当前选中项对应的地区码, 默认值: -"
@@ -245,6 +302,61 @@
   "van-area/is-oversea-code": {
     "type": "() => boolean",
     "description": "根据地区码校验海外地址，海外地址会划分至单独的分类, 默认值: -"
+  },
+  "van-address-list/v-model": {
+    "type": "string",
+    "description": "当前选中地址的 id, 默认值: -"
+  },
+  "van-address-list/list": {
+    "type": "Address[]",
+    "description": "地址列表, 默认值: `[]`"
+  },
+  "van-address-list/disabled-list": {
+    "type": "Address[]",
+    "description": "不可配送地址列表, 默认值: `[]`"
+  },
+  "van-address-list/disabled-text": {
+    "type": "string",
+    "description": "不可配送提示文案, 默认值: -"
+  },
+  "van-address-list/switchable": {
+    "type": "boolean",
+    "description": "是否允许切换地址, 默认值: `true`"
+  },
+  "van-address-list/add-button-text": {
+    "type": "string",
+    "description": "底部按钮文字, 默认值: `新增地址`"
+  },
+  "van-address-list/default-tag-text": {
+    "type": "string",
+    "description": "默认地址标签文字, 默认值: -"
+  },
+  "van-badge/content": {
+    "type": "number | string",
+    "description": "徽标内容, 默认值: -"
+  },
+  "van-badge/color": {
+    "type": "string",
+    "description": "徽标背景颜色, 默认值: `#ee0a24`"
+  },
+  "van-badge/dot": {
+    "type": "boolean",
+    "description": "是否展示为小红点, 默认值: `false`"
+  },
+  "van-badge/max": {
+    "type": "number | string",
+    "description": "最大值，超过最大值会显示 `{max}+`，仅当 content 为数字时有效, 默认值: -"
+  },
+  "van-badge/offset": {
+    "type": "[number | string, number \\",
+    "description": "设置徽标的偏移量，数组的两项分别对应水平和垂直方向的偏移量，默认单位为 `px`, 默认值: string]_",
+    "options": [
+      "-"
+    ]
+  },
+  "van-badge/show-zero": {
+    "type": "boolean",
+    "description": "当 content 为数字 0 时，是否展示徽标, 默认值: `true`"
   },
   "van-button/type": {
     "type": "string",
@@ -331,118 +443,6 @@
     "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
   },
   "van-button/replace": {
-    "type": "boolean",
-    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
-  },
-  "van-badge/content": {
-    "type": "number | string",
-    "description": "徽标内容, 默认值: -"
-  },
-  "van-badge/color": {
-    "type": "string",
-    "description": "徽标背景颜色, 默认值: `#ee0a24`"
-  },
-  "van-badge/dot": {
-    "type": "boolean",
-    "description": "是否展示为小红点, 默认值: `false`"
-  },
-  "van-badge/max": {
-    "type": "number | string",
-    "description": "最大值，超过最大值会显示 `{max}+`，仅当 content 为数字时有效, 默认值: -"
-  },
-  "van-badge/offset": {
-    "type": "[number | string, number \\",
-    "description": "设置徽标的偏移量，数组的两项分别对应水平和垂直方向的偏移量，默认单位为 `px`, 默认值: string]_",
-    "options": [
-      "-"
-    ]
-  },
-  "van-badge/show-zero": {
-    "type": "boolean",
-    "description": "当 content 为数字 0 时，是否展示徽标, 默认值: `true`"
-  },
-  "van-action-bar/safe-area-inset-bottom": {
-    "type": "boolean",
-    "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei), 默认值: `true`"
-  },
-  "van-action-bar-icon/text": {
-    "type": "string",
-    "description": "按钮文字, 默认值: -"
-  },
-  "van-action-bar-icon/icon": {
-    "type": "string",
-    "description": "图标, 默认值: -"
-  },
-  "van-action-bar-icon/color": {
-    "type": "string",
-    "description": "图标颜色, 默认值: `#323233`"
-  },
-  "van-action-bar-icon/icon-class": {
-    "type": "string | Array \\",
-    "description": "图标额外类名, 默认值: object_",
-    "options": [
-      "-"
-    ]
-  },
-  "van-action-bar-icon/dot": {
-    "type": "boolean",
-    "description": "是否显示图标右上角小红点, 默认值: `false`"
-  },
-  "van-action-bar-icon/badge": {
-    "type": "number | string",
-    "description": "图标右上角徽标的内容, 默认值: -"
-  },
-  "van-action-bar-icon/url": {
-    "type": "string",
-    "description": "点击后跳转的链接地址, 默认值: -"
-  },
-  "van-action-bar-icon/to": {
-    "type": "string | object",
-    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
-  },
-  "van-action-bar-icon/replace": {
-    "type": "boolean",
-    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
-  },
-  "van-action-bar-button/text": {
-    "type": "string",
-    "description": "按钮文字, 默认值: -"
-  },
-  "van-action-bar-button/type": {
-    "type": "string",
-    "description": "按钮类型，可选值为 `primary` `info` `warning` `danger`, 默认值: `default`"
-  },
-  "van-action-bar-button/color": {
-    "type": "string",
-    "description": "按钮颜色，支持传入 `linear-gradient` 渐变色, 默认值: -"
-  },
-  "van-action-bar-button/icon": {
-    "type": "string",
-    "description": "左侧[图标名称](#/zh-CN/icon)或图片链接, 默认值: -"
-  },
-  "van-action-bar-button/disabled": {
-    "type": "boolean",
-    "description": "是否禁用按钮, 默认值: `false`",
-    "options": [
-      "-"
-    ]
-  },
-  "van-action-bar-button/loading": {
-    "type": "boolean",
-    "description": "是否显示为加载状态, 默认值: `false`",
-    "options": [
-      "-"
-    ]
-  },
-  "van-action-bar-button/url": {
-    "type": "string",
-    "description": "点击后跳转的链接地址, 默认值: -"
-  },
-  "van-action-bar-button/to": {
-    "type": "string | object",
-    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
-  },
-  "van-action-bar-button/replace": {
     "type": "boolean",
     "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
   },
@@ -640,102 +640,6 @@
   "van-cascader/field-names": {
     "type": "object",
     "description": "自定义 `options` 结构中的字段, 默认值: `{ text: 'text', value: 'value', children: 'children' }`"
-  },
-  "van-cell-group/title": {
-    "type": "string",
-    "description": "分组标题, 默认值: `-`"
-  },
-  "van-cell-group/border": {
-    "type": "boolean",
-    "description": "是否显示外边框, 默认值: `true`"
-  },
-  "van-cell/title": {
-    "type": "number | string",
-    "description": "左侧标题, 默认值: -"
-  },
-  "van-cell/value": {
-    "type": "number | string",
-    "description": "右侧内容, 默认值: -"
-  },
-  "van-cell/label": {
-    "type": "string",
-    "description": "标题下方的描述信息, 默认值: -"
-  },
-  "van-cell/size": {
-    "type": "string",
-    "description": "单元格大小，可选值为 `large`, 默认值: -"
-  },
-  "van-cell/icon": {
-    "type": "string",
-    "description": "左侧[图标名称](#/zh-CN/icon)或图片链接, 默认值: -"
-  },
-  "van-cell/icon-prefix": {
-    "type": "string",
-    "description": "图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props), 默认值: `van-icon`"
-  },
-  "van-cell/url": {
-    "type": "string",
-    "description": "点击后跳转的链接地址, 默认值: -"
-  },
-  "van-cell/to": {
-    "type": "string | object",
-    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
-  },
-  "van-cell/border": {
-    "type": "boolean",
-    "description": "是否显示内边框, 默认值: `true`"
-  },
-  "van-cell/replace": {
-    "type": "boolean",
-    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
-  },
-  "van-cell/clickable": {
-    "type": "boolean",
-    "description": "是否开启点击反馈, 默认值: `null`"
-  },
-  "van-cell/is-link": {
-    "type": "boolean",
-    "description": "是否展示右侧箭头并开启点击反馈, 默认值: `false`"
-  },
-  "van-cell/required": {
-    "type": "boolean",
-    "description": "是否显示表单必填星号, 默认值: `false`"
-  },
-  "van-cell/center": {
-    "type": "boolean",
-    "description": "是否使内容垂直居中, 默认值: `false`"
-  },
-  "van-cell/arrow-direction": {
-    "type": "string",
-    "description": "箭头方向，可选值为 `left` `up` `down`, 默认值: `right`"
-  },
-  "van-cell/title-style": {
-    "type": "string | Array \\",
-    "description": "左侧标题额外样式, 默认值: object_",
-    "options": [
-      "-"
-    ]
-  },
-  "van-cell/title-class": {
-    "type": "string | Array \\",
-    "description": "左侧标题额外类名, 默认值: object_",
-    "options": [
-      "-"
-    ]
-  },
-  "van-cell/value-class": {
-    "type": "string | Array \\",
-    "description": "右侧内容额外类名, 默认值: object_",
-    "options": [
-      "-"
-    ]
-  },
-  "van-cell/label-class": {
-    "type": "string | Array \\",
-    "description": "描述信息额外类名, 默认值: object_",
-    "options": [
-      "-"
-    ]
   },
   "van-checkbox/v-model": {
     "type": "boolean",
@@ -939,6 +843,102 @@
   "van-collapse-item/label-class": {
     "type": "string",
     "description": "描述信息额外类名, 默认值: -"
+  },
+  "van-cell-group/title": {
+    "type": "string",
+    "description": "分组标题, 默认值: `-`"
+  },
+  "van-cell-group/border": {
+    "type": "boolean",
+    "description": "是否显示外边框, 默认值: `true`"
+  },
+  "van-cell/title": {
+    "type": "number | string",
+    "description": "左侧标题, 默认值: -"
+  },
+  "van-cell/value": {
+    "type": "number | string",
+    "description": "右侧内容, 默认值: -"
+  },
+  "van-cell/label": {
+    "type": "string",
+    "description": "标题下方的描述信息, 默认值: -"
+  },
+  "van-cell/size": {
+    "type": "string",
+    "description": "单元格大小，可选值为 `large`, 默认值: -"
+  },
+  "van-cell/icon": {
+    "type": "string",
+    "description": "左侧[图标名称](#/zh-CN/icon)或图片链接, 默认值: -"
+  },
+  "van-cell/icon-prefix": {
+    "type": "string",
+    "description": "图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props), 默认值: `van-icon`"
+  },
+  "van-cell/url": {
+    "type": "string",
+    "description": "点击后跳转的链接地址, 默认值: -"
+  },
+  "van-cell/to": {
+    "type": "string | object",
+    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
+  },
+  "van-cell/border": {
+    "type": "boolean",
+    "description": "是否显示内边框, 默认值: `true`"
+  },
+  "van-cell/replace": {
+    "type": "boolean",
+    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
+  },
+  "van-cell/clickable": {
+    "type": "boolean",
+    "description": "是否开启点击反馈, 默认值: `null`"
+  },
+  "van-cell/is-link": {
+    "type": "boolean",
+    "description": "是否展示右侧箭头并开启点击反馈, 默认值: `false`"
+  },
+  "van-cell/required": {
+    "type": "boolean",
+    "description": "是否显示表单必填星号, 默认值: `false`"
+  },
+  "van-cell/center": {
+    "type": "boolean",
+    "description": "是否使内容垂直居中, 默认值: `false`"
+  },
+  "van-cell/arrow-direction": {
+    "type": "string",
+    "description": "箭头方向，可选值为 `left` `up` `down`, 默认值: `right`"
+  },
+  "van-cell/title-style": {
+    "type": "string | Array \\",
+    "description": "左侧标题额外样式, 默认值: object_",
+    "options": [
+      "-"
+    ]
+  },
+  "van-cell/title-class": {
+    "type": "string | Array \\",
+    "description": "左侧标题额外类名, 默认值: object_",
+    "options": [
+      "-"
+    ]
+  },
+  "van-cell/value-class": {
+    "type": "string | Array \\",
+    "description": "右侧内容额外类名, 默认值: object_",
+    "options": [
+      "-"
+    ]
+  },
+  "van-cell/label-class": {
+    "type": "string | Array \\",
+    "description": "描述信息额外类名, 默认值: object_",
+    "options": [
+      "-"
+    ]
   },
   "van-contact-card/type": {
     "type": "string",
@@ -1188,6 +1188,77 @@
     "type": "number | string",
     "description": "可选的最大分钟, 默认值: `59`"
   },
+  "van-divider/dashed": {
+    "type": "boolean",
+    "description": "是否使用虚线, 默认值: `false`"
+  },
+  "van-divider/hairline": {
+    "type": "boolean",
+    "description": "是否使用 0.5px 线, 默认值: `true`"
+  },
+  "van-divider/content-position": {
+    "type": "string",
+    "description": "内容位置，可选值为 `left` `right`, 默认值: `center`"
+  },
+  "van-dropdown-menu/active-color": {
+    "type": "string",
+    "description": "菜单标题和选项的选中态颜色, 默认值: `#ee0a24`"
+  },
+  "van-dropdown-menu/direction": {
+    "type": "string",
+    "description": "菜单展开方向，可选值为`up`, 默认值: `down`"
+  },
+  "van-dropdown-menu/z-index": {
+    "type": "number | string",
+    "description": "菜单栏 z-index 层级, 默认值: `10`"
+  },
+  "van-dropdown-menu/duration": {
+    "type": "number | string",
+    "description": "动画时长，单位秒, 默认值: `0.2`"
+  },
+  "van-dropdown-menu/overlay": {
+    "type": "boolean",
+    "description": "是否显示遮罩层, 默认值: `true`"
+  },
+  "van-dropdown-menu/close-on-click-overlay": {
+    "type": "boolean",
+    "description": "是否在点击遮罩层后关闭菜单, 默认值: `true`"
+  },
+  "van-dropdown-menu/close-on-click-outside": {
+    "type": "boolean",
+    "description": "是否在点击外部元素后关闭菜单, 默认值: `true`"
+  },
+  "van-dropdown-item/v-model": {
+    "type": "number | string",
+    "description": "当前选中项对应的 value, 默认值: -"
+  },
+  "van-dropdown-item/title": {
+    "type": "string",
+    "description": "菜单项标题, 默认值: 当前选中项文字"
+  },
+  "van-dropdown-item/options": {
+    "type": "Option[]",
+    "description": "选项数组, 默认值: `[]`"
+  },
+  "van-dropdown-item/disabled": {
+    "type": "boolean",
+    "description": "是否禁用菜单, 默认值: `false`"
+  },
+  "van-dropdown-item/lazy-render": {
+    "type": "boolean",
+    "description": "是否在首次展开时才渲染菜单内容, 默认值: `true`"
+  },
+  "van-dropdown-item/title-class": {
+    "type": "string | Array \\",
+    "description": "标题额外类名, 默认值: object_",
+    "options": [
+      "-"
+    ]
+  },
+  "van-dropdown-item/teleport": {
+    "type": "string | Element",
+    "description": "指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi), 默认值: -"
+  },
   "van-dialog/v-model:show": {
     "type": "boolean",
     "description": "是否显示弹窗, 默认值: -"
@@ -1279,89 +1350,6 @@
   "van-dialog/teleport": {
     "type": "string | Element",
     "description": "指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi), 默认值: -"
-  },
-  "van-divider/dashed": {
-    "type": "boolean",
-    "description": "是否使用虚线, 默认值: `false`"
-  },
-  "van-divider/hairline": {
-    "type": "boolean",
-    "description": "是否使用 0.5px 线, 默认值: `true`"
-  },
-  "van-divider/content-position": {
-    "type": "string",
-    "description": "内容位置，可选值为 `left` `right`, 默认值: `center`"
-  },
-  "van-dropdown-menu/active-color": {
-    "type": "string",
-    "description": "菜单标题和选项的选中态颜色, 默认值: `#ee0a24`"
-  },
-  "van-dropdown-menu/direction": {
-    "type": "string",
-    "description": "菜单展开方向，可选值为`up`, 默认值: `down`"
-  },
-  "van-dropdown-menu/z-index": {
-    "type": "number | string",
-    "description": "菜单栏 z-index 层级, 默认值: `10`"
-  },
-  "van-dropdown-menu/duration": {
-    "type": "number | string",
-    "description": "动画时长，单位秒, 默认值: `0.2`"
-  },
-  "van-dropdown-menu/overlay": {
-    "type": "boolean",
-    "description": "是否显示遮罩层, 默认值: `true`"
-  },
-  "van-dropdown-menu/close-on-click-overlay": {
-    "type": "boolean",
-    "description": "是否在点击遮罩层后关闭菜单, 默认值: `true`"
-  },
-  "van-dropdown-menu/close-on-click-outside": {
-    "type": "boolean",
-    "description": "是否在点击外部元素后关闭菜单, 默认值: `true`"
-  },
-  "van-dropdown-item/v-model": {
-    "type": "number | string",
-    "description": "当前选中项对应的 value, 默认值: -"
-  },
-  "van-dropdown-item/title": {
-    "type": "string",
-    "description": "菜单项标题, 默认值: 当前选中项文字"
-  },
-  "van-dropdown-item/options": {
-    "type": "Option[]",
-    "description": "选项数组, 默认值: `[]`"
-  },
-  "van-dropdown-item/disabled": {
-    "type": "boolean",
-    "description": "是否禁用菜单, 默认值: `false`"
-  },
-  "van-dropdown-item/lazy-render": {
-    "type": "boolean",
-    "description": "是否在首次展开时才渲染菜单内容, 默认值: `true`"
-  },
-  "van-dropdown-item/title-class": {
-    "type": "string | Array \\",
-    "description": "标题额外类名, 默认值: object_",
-    "options": [
-      "-"
-    ]
-  },
-  "van-dropdown-item/teleport": {
-    "type": "string | Element",
-    "description": "指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi), 默认值: -"
-  },
-  "van-empty/image": {
-    "type": "string",
-    "description": "图片类型，可选值为 `error` `network` `search`，支持传入图片 URL, 默认值: `default`"
-  },
-  "van-empty/image-size": {
-    "type": "number | string",
-    "description": "图片大小，默认单位为 `px`, 默认值: -"
-  },
-  "van-empty/description": {
-    "type": "string",
-    "description": "图片下方的描述文字, 默认值: -"
   },
   "van-field/v-model": {
     "type": "number | string",
@@ -1561,6 +1549,18 @@
   "van-form/submit-on-enter": {
     "type": "boolean",
     "description": "是否在按下回车键时提交表单, 默认值: `true`"
+  },
+  "van-empty/image": {
+    "type": "string",
+    "description": "图片类型，可选值为 `error` `network` `search`，支持传入图片 URL, 默认值: `default`"
+  },
+  "van-empty/image-size": {
+    "type": "number | string",
+    "description": "图片大小，默认单位为 `px`, 默认值: -"
+  },
+  "van-empty/description": {
+    "type": "string",
+    "description": "图片下方的描述文字, 默认值: -"
   },
   "van-grid/column-num": {
     "type": "number | string",
@@ -2004,94 +2004,6 @@
   "van-number-keyboard/random-key-order": {
     "type": "boolean",
     "description": "是否将通过随机顺序展示按键, 默认值: `false`"
-  },
-  "van-overlay/show": {
-    "type": "boolean",
-    "description": "是否展示遮罩层, 默认值: `false`"
-  },
-  "van-overlay/z-index": {
-    "type": "number | string",
-    "description": "z-index 层级, 默认值: `1`"
-  },
-  "van-overlay/duration": {
-    "type": "number | string",
-    "description": "动画时长，单位秒, 默认值: `0.3`"
-  },
-  "van-overlay/class-name": {
-    "type": "string",
-    "description": "自定义类名, 默认值: -"
-  },
-  "van-overlay/custom-style": {
-    "type": "object",
-    "description": "自定义样式, 默认值: -"
-  },
-  "van-overlay/lock-scroll": {
-    "type": "boolean",
-    "description": "是否锁定背景滚动，锁定时蒙层里的内容也将无法滚动, 默认值: `true`"
-  },
-  "van-pagination/v-model": {
-    "type": "number",
-    "description": "当前页码, 默认值: -"
-  },
-  "van-pagination/mode": {
-    "type": "string",
-    "description": "显示模式，可选值为 `simple`, 默认值: `multi`"
-  },
-  "van-pagination/prev-text": {
-    "type": "string",
-    "description": "上一页按钮文字, 默认值: `上一页`"
-  },
-  "van-pagination/next-text": {
-    "type": "string",
-    "description": "下一页按钮文字, 默认值: `下一页`"
-  },
-  "van-pagination/page-count": {
-    "type": "number | string",
-    "description": "总页数, 默认值: 根据页数计算"
-  },
-  "van-pagination/total-items": {
-    "type": "number | string",
-    "description": "总记录数, 默认值: `0`"
-  },
-  "van-pagination/items-per-page": {
-    "type": "number | string",
-    "description": "每页记录数, 默认值: `10`"
-  },
-  "van-pagination/show-page-size": {
-    "type": "number | string",
-    "description": "显示的页码个数, 默认值: `5`"
-  },
-  "van-pagination/force-ellipses": {
-    "type": "boolean",
-    "description": "是否显示省略号, 默认值: `false`"
-  },
-  "van-password-input/value": {
-    "type": "string",
-    "description": "密码值, 默认值: `''`"
-  },
-  "van-password-input/info": {
-    "type": "string",
-    "description": "输入框下方文字提示, 默认值: -"
-  },
-  "van-password-input/error-info": {
-    "type": "string",
-    "description": "输入框下方错误提示, 默认值: -"
-  },
-  "van-password-input/length": {
-    "type": "number | string",
-    "description": "密码最大长度, 默认值: `6`"
-  },
-  "van-password-input/gutter": {
-    "type": "number | string",
-    "description": "输入框格子之间的间距，如 `20px` `2em`，默认单位为`px`, 默认值: `0`"
-  },
-  "van-password-input/mask": {
-    "type": "boolean",
-    "description": "是否隐藏密码内容, 默认值: `true`"
-  },
-  "van-password-input/focused": {
-    "type": "boolean",
-    "description": "是否已聚焦，聚焦时会显示光标, 默认值: `false`"
   },
   "van-picker/columns": {
     "type": "Column[]",
@@ -2543,6 +2455,126 @@
     "type": "string",
     "description": "输入框右侧[图标名称](#/zh-CN/icon)或图片链接, 默认值: -"
   },
+  "van-overlay/show": {
+    "type": "boolean",
+    "description": "是否展示遮罩层, 默认值: `false`"
+  },
+  "van-overlay/z-index": {
+    "type": "number | string",
+    "description": "z-index 层级, 默认值: `1`"
+  },
+  "van-overlay/duration": {
+    "type": "number | string",
+    "description": "动画时长，单位秒, 默认值: `0.3`"
+  },
+  "van-overlay/class-name": {
+    "type": "string",
+    "description": "自定义类名, 默认值: -"
+  },
+  "van-overlay/custom-style": {
+    "type": "object",
+    "description": "自定义样式, 默认值: -"
+  },
+  "van-overlay/lock-scroll": {
+    "type": "boolean",
+    "description": "是否锁定背景滚动，锁定时蒙层里的内容也将无法滚动, 默认值: `true`"
+  },
+  "van-password-input/value": {
+    "type": "string",
+    "description": "密码值, 默认值: `''`"
+  },
+  "van-password-input/info": {
+    "type": "string",
+    "description": "输入框下方文字提示, 默认值: -"
+  },
+  "van-password-input/error-info": {
+    "type": "string",
+    "description": "输入框下方错误提示, 默认值: -"
+  },
+  "van-password-input/length": {
+    "type": "number | string",
+    "description": "密码最大长度, 默认值: `6`"
+  },
+  "van-password-input/gutter": {
+    "type": "number | string",
+    "description": "输入框格子之间的间距，如 `20px` `2em`，默认单位为`px`, 默认值: `0`"
+  },
+  "van-password-input/mask": {
+    "type": "boolean",
+    "description": "是否隐藏密码内容, 默认值: `true`"
+  },
+  "van-password-input/focused": {
+    "type": "boolean",
+    "description": "是否已聚焦，聚焦时会显示光标, 默认值: `false`"
+  },
+  "van-pagination/v-model": {
+    "type": "number",
+    "description": "当前页码, 默认值: -"
+  },
+  "van-pagination/mode": {
+    "type": "string",
+    "description": "显示模式，可选值为 `simple`, 默认值: `multi`"
+  },
+  "van-pagination/prev-text": {
+    "type": "string",
+    "description": "上一页按钮文字, 默认值: `上一页`"
+  },
+  "van-pagination/next-text": {
+    "type": "string",
+    "description": "下一页按钮文字, 默认值: `下一页`"
+  },
+  "van-pagination/page-count": {
+    "type": "number | string",
+    "description": "总页数, 默认值: 根据页数计算"
+  },
+  "van-pagination/total-items": {
+    "type": "number | string",
+    "description": "总记录数, 默认值: `0`"
+  },
+  "van-pagination/items-per-page": {
+    "type": "number | string",
+    "description": "每页记录数, 默认值: `10`"
+  },
+  "van-pagination/show-page-size": {
+    "type": "number | string",
+    "description": "显示的页码个数, 默认值: `5`"
+  },
+  "van-pagination/force-ellipses": {
+    "type": "boolean",
+    "description": "是否显示省略号, 默认值: `false`"
+  },
+  "van-sidebar/v-model": {
+    "type": "number | string",
+    "description": "当前导航项的索引, 默认值: `0`"
+  },
+  "van-sidebar-item/title": {
+    "type": "string",
+    "description": "内容, 默认值: `''`"
+  },
+  "van-sidebar-item/dot": {
+    "type": "boolean",
+    "description": "是否显示右上角小红点, 默认值: `false`"
+  },
+  "van-sidebar-item/badge": {
+    "type": "number | string",
+    "description": "图标右上角徽标的内容, 默认值: -"
+  },
+  "van-sidebar-item/disabled": {
+    "type": "boolean",
+    "description": "是否禁用该项, 默认值: `false`"
+  },
+  "van-sidebar-item/url": {
+    "type": "string",
+    "description": "点击后跳转的链接地址, 默认值: -"
+  },
+  "van-sidebar-item/to": {
+    "type": "string | object",
+    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
+  },
+  "van-sidebar-item/replace": {
+    "type": "boolean",
+    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
+  },
   "van-share-sheet/v-model:show": {
     "type": "boolean",
     "description": "是否显示分享面板, 默认值: `false`"
@@ -2605,38 +2637,6 @@
   "van-share-sheet/teleport": {
     "type": "string | Element",
     "description": "指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi), 默认值: -"
-  },
-  "van-sidebar/v-model": {
-    "type": "number | string",
-    "description": "当前导航项的索引, 默认值: `0`"
-  },
-  "van-sidebar-item/title": {
-    "type": "string",
-    "description": "内容, 默认值: `''`"
-  },
-  "van-sidebar-item/dot": {
-    "type": "boolean",
-    "description": "是否显示右上角小红点, 默认值: `false`"
-  },
-  "van-sidebar-item/badge": {
-    "type": "number | string",
-    "description": "图标右上角徽标的内容, 默认值: -"
-  },
-  "van-sidebar-item/disabled": {
-    "type": "boolean",
-    "description": "是否禁用该项, 默认值: `false`"
-  },
-  "van-sidebar-item/url": {
-    "type": "string",
-    "description": "点击后跳转的链接地址, 默认值: -"
-  },
-  "van-sidebar-item/to": {
-    "type": "string | object",
-    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
-  },
-  "van-sidebar-item/replace": {
-    "type": "boolean",
-    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
   },
   "van-skeleton/row": {
     "type": "number | string",
@@ -3151,78 +3151,6 @@
       "-"
     ]
   },
-  "van-tabbar/v-model": {
-    "type": "number | string",
-    "description": "当前选中标签的名称或索引值, 默认值: `0`"
-  },
-  "van-tabbar/fixed": {
-    "type": "boolean",
-    "description": "是否固定在底部, 默认值: `true`"
-  },
-  "van-tabbar/border": {
-    "type": "boolean",
-    "description": "是否显示外边框, 默认值: `true`"
-  },
-  "van-tabbar/z-index": {
-    "type": "number | string",
-    "description": "元素 z-index, 默认值: `1`"
-  },
-  "van-tabbar/active-color": {
-    "type": "string",
-    "description": "选中标签的颜色, 默认值: `#1989fa`"
-  },
-  "van-tabbar/inactive-color": {
-    "type": "string",
-    "description": "未选中标签的颜色, 默认值: `#7d7e80`"
-  },
-  "van-tabbar/route": {
-    "type": "boolean",
-    "description": "是否开启路由模式, 默认值: `false`"
-  },
-  "van-tabbar/placeholder": {
-    "type": "boolean",
-    "description": "固定在底部时，是否在标签位置生成一个等高的占位元素, 默认值: `false`"
-  },
-  "van-tabbar/safe-area-inset-bottom": {
-    "type": "boolean",
-    "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)，设置 fixed 时默认开启, 默认值: `false`"
-  },
-  "van-tabbar/before-change": {
-    "type": "(name) => boolean | Promise",
-    "description": "切换标签前的回调函数，返回 `false` 可阻止切换，支持返回 Promise, 默认值: -"
-  },
-  "van-tabbar-item/name": {
-    "type": "number | string",
-    "description": "标签名称，作为匹配的标识符, 默认值: 当前标签的索引值"
-  },
-  "van-tabbar-item/icon": {
-    "type": "string",
-    "description": "[图标名称](#/zh-CN/icon)或图片链接, 默认值: -"
-  },
-  "van-tabbar-item/icon-prefix": {
-    "type": "string",
-    "description": "图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props), 默认值: `van-icon`"
-  },
-  "van-tabbar-item/dot": {
-    "type": "boolean",
-    "description": "是否显示图标右上角小红点, 默认值: `false`"
-  },
-  "van-tabbar-item/badge": {
-    "type": "number | string",
-    "description": "图标右上角徽标的内容, 默认值: -"
-  },
-  "van-tabbar-item/url": {
-    "type": "string",
-    "description": "点击后跳转的链接地址, 默认值: -"
-  },
-  "van-tabbar-item/to": {
-    "type": "string | object",
-    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
-  },
-  "van-tabbar-item/replace": {
-    "type": "boolean",
-    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
-  },
   "van-tag/type": {
     "type": "string",
     "description": "类型，可选值为 `primary` `success` `danger` `warning`, 默认值: `default`"
@@ -3373,5 +3301,77 @@
   "van-uploader/upload-icon": {
     "type": "string",
     "description": "上传区域[图标名称](#/zh-CN/icon)或图片链接, 默认值: `photograph`"
+  },
+  "van-tabbar/v-model": {
+    "type": "number | string",
+    "description": "当前选中标签的名称或索引值, 默认值: `0`"
+  },
+  "van-tabbar/fixed": {
+    "type": "boolean",
+    "description": "是否固定在底部, 默认值: `true`"
+  },
+  "van-tabbar/border": {
+    "type": "boolean",
+    "description": "是否显示外边框, 默认值: `true`"
+  },
+  "van-tabbar/z-index": {
+    "type": "number | string",
+    "description": "元素 z-index, 默认值: `1`"
+  },
+  "van-tabbar/active-color": {
+    "type": "string",
+    "description": "选中标签的颜色, 默认值: `#1989fa`"
+  },
+  "van-tabbar/inactive-color": {
+    "type": "string",
+    "description": "未选中标签的颜色, 默认值: `#7d7e80`"
+  },
+  "van-tabbar/route": {
+    "type": "boolean",
+    "description": "是否开启路由模式, 默认值: `false`"
+  },
+  "van-tabbar/placeholder": {
+    "type": "boolean",
+    "description": "固定在底部时，是否在标签位置生成一个等高的占位元素, 默认值: `false`"
+  },
+  "van-tabbar/safe-area-inset-bottom": {
+    "type": "boolean",
+    "description": "是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)，设置 fixed 时默认开启, 默认值: `false`"
+  },
+  "van-tabbar/before-change": {
+    "type": "(name) => boolean | Promise",
+    "description": "切换标签前的回调函数，返回 `false` 可阻止切换，支持返回 Promise, 默认值: -"
+  },
+  "van-tabbar-item/name": {
+    "type": "number | string",
+    "description": "标签名称，作为匹配的标识符, 默认值: 当前标签的索引值"
+  },
+  "van-tabbar-item/icon": {
+    "type": "string",
+    "description": "[图标名称](#/zh-CN/icon)或图片链接, 默认值: -"
+  },
+  "van-tabbar-item/icon-prefix": {
+    "type": "string",
+    "description": "图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props), 默认值: `van-icon`"
+  },
+  "van-tabbar-item/dot": {
+    "type": "boolean",
+    "description": "是否显示图标右上角小红点, 默认值: `false`"
+  },
+  "van-tabbar-item/badge": {
+    "type": "number | string",
+    "description": "图标右上角徽标的内容, 默认值: -"
+  },
+  "van-tabbar-item/url": {
+    "type": "string",
+    "description": "点击后跳转的链接地址, 默认值: -"
+  },
+  "van-tabbar-item/to": {
+    "type": "string | object",
+    "description": "点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to), 默认值: -"
+  },
+  "van-tabbar-item/replace": {
+    "type": "boolean",
+    "description": "是否在跳转时替换当前页面历史, 默认值: `false`"
   }
 }

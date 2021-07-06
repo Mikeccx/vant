@@ -46,7 +46,8 @@ export default defineComponent({
           }
         }
       } else {
-        var index = value.indexOf(name);
+        // const index = value.indexOf(name);
+        var index = value.findIndex(i => i.id === name.id) !== -1 ? value.findIndex(i => i.id === name.id) : value.indexOf(name);
 
         if (index !== -1) {
           value.splice(index, 1);
@@ -60,7 +61,8 @@ export default defineComponent({
 
     var checked = computed(() => {
       if (parent && props.bindGroup) {
-        return parent.props.modelValue.indexOf(props.name) !== -1;
+        // return parent.props.modelValue.indexOf(props.name) !== -1;
+        return parent.props.modelValue.indexOf(props.name) !== -1 || parent.props.modelValue.findIndex(i => i.id === props.name.id) !== -1;
       }
 
       return !!props.modelValue;
